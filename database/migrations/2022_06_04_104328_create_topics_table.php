@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('topics', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('slug');
+            $table->string('name');
         });
     }
 
